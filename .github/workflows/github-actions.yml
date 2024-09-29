@@ -25,10 +25,7 @@ jobs:
                     cache: maven
             -   name: Build with Maven
                 run: mvn -B package --file pom.xml
-            -   name: Checkstyle for Java
-                uses: dbelyaev/action-checkstyle@v1.16.3
     checkstyle:
-        name: runner / checkstyle
         runs-on: ubuntu-latest
         steps:
             -   name: Checkstyle for Java
